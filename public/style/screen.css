@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.bg, .fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.bg {
+  background-image: url('../img/bg.jpg');
+}
+.fg {
+  background-image: url('../img/fg.png');
+  pointer-events: none;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 1em 5em rgba(0, 0, 0, 0.3);
+  width: 16em;
+  padding: 1.5em;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  margin: 0 0 0 -8em;
+  top: 70%;
+  left: 56%;
+  -webkit-transition-property: top;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: top;
+  -moz-transition-duration: 1s;
+  -ms-transition-property: top;
+  -ms-transition-duration: 1s;
+  transition-property: top;
+  transition-duration: 1s;
+}
+
+body:hover .card {
+  top: 22%;
+}
